@@ -29,6 +29,15 @@ button {
   border: none;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+
 :root {
   --main-font: 'Roboto';
   --accent-font: 'Raleway';
@@ -127,6 +136,8 @@ header .logo {
   color: var(--text-color);
   margin-left: 50px;
   font-family: var(--main-font);
+  display: flex;
+  align-items: center;
 }
 
 .contacts li:nth-child(1) > a {
@@ -136,8 +147,10 @@ header .logo {
 .link:focus,
 .contact:focus,
 .link:hover,
-.contact:hover {
+.contact:hover,
+.contact:hover .header-icon {
   color: var(--text-color-blue);
+  fill: var(--text-color-blue);
 }
 
 .hero {
@@ -275,4 +288,106 @@ address ul li {
 
 address ul li a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.tab-btn {
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.tab-btn.active {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cart-portfolio {
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.cart-portfolio-info {
+  padding: 20px 24px;
+  font-family: Roboto;
+}
+
+.cart-portfolio-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.cart-portfolio-text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.features__box-icon {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.soc {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.soc a {
+  display: inline-block;
+  text-align: center;
+  line-height: 54px;
+}
+
+.soc use {
+  fill: #afb1b8;
+}
+
+.soc:hover,
+.soc:hover use {
+  background: #2196f3;
+  fill: #fff;
+}
+
+.soc-list > li:nth-child(1) {
+  margin-left: 0;
 }
