@@ -96,9 +96,12 @@ header .logo {
 }
 
 .link {
+  font-size: 14px;
+  text-transform: capitalize;
   font-weight: 500;
   line-height: 80px;
   letter-spacing: 0.02em;
+
   color: var(--main-text-color);
   margin-right: 50px;
   font-family: var(--main-font);
@@ -111,6 +114,7 @@ header .logo {
 .contact {
   font-weight: 500;
   line-height: 80px;
+  font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--text-color);
   margin-left: 50px;
@@ -190,7 +194,19 @@ header .logo {
 .features__text {
   font-family: var(--main-font);
   font-weight: normal;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.title-section {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
