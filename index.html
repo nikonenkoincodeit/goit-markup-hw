@@ -51,7 +51,7 @@
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero__button">Заказать услугу</button>
+        <button type="button" class="hero__button js-hero__button">Заказать услугу</button>
       </section>
 
       <section class="features section_pb0">
@@ -293,6 +293,55 @@
           </ul>
         </div>
       </section>
+      <section>
+        <h2 class="title-section">Постоянные клиенты</h2>
+        <div class="container">
+          <ul class="clients">
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client">
+              <a href="#">
+                <svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -309,7 +358,6 @@
                   <a href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li><a href="tel:+380961111111">+38 (096) 111 11 11</a></li>
-                <li><a href="tel:+380961111111">+38 (096) 111 11 11</a></li>
               </ul>
             </address>
           </li>
@@ -318,5 +366,40 @@
         </ul>
       </div>
     </footer>
+    <div class="wrapper-popup js-wrapper-popup open">
+      
+      <div class="popup">
+        <div class="close-popup js-close-popup">
+          &#10006;
+        </div>
+      <form class="form">
+        <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="row-form">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text">
+        </div>
+        <div class="row-form">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="phone">
+        </div>
+        <div class="row-form">
+          <label for="email">Почта</label>
+          <input id="email" name="email" type="email">
+        </div>
+        <div class="row-form">
+          <label for="comment">Комментарий</label>
+          <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="row-form">
+          <label for="agreement-conditions">
+            <input type="checkbox" id="agreement-conditions" name="agreement-conditions">
+            <p>Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></p>
+          </label>
+        </div>
+        <button type="submit" class="btn-form">Отправить</button>
+      </form>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
